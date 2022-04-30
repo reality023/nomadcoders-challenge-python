@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import "reset";
+@import "common";
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/img/background.jpg');
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .box {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+    
+            .header__title {
+                text-align: center;
+                font-size: 48px;
+                padding: 30px 0px;
+            }
+    
+            .header__search-form {
+                .form-input {
+                    width: 300px;
+                    height: 50px;
+                    border-radius: 10px;
+                    border: 2px solid rgb(0, 0, 0);
+                    padding: 15px;
+                    font-size: 20px;
+                }
+                
+                .form-button {
+                    margin-left: 10px;
+                    width: 100px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: rgb(0, 0, 0);
+                    color: #FFFFFF;
+                    font-size: 16px;
+                }
+            }
+    
+            .header__jobs-banner {
+                width: 100%;
+                height: 90px;
+                margin: 30px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    width: 150px;
+                    height: 70px;
+                    object-fit: cover;
+                    margin: 0px 10px;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+#search {
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/img/search-background.jpg');
+    .container {
+        width: 100%;
+        height: 100%;
+        .box {
+            position: relative;
+            padding: 40px 60px;
+            margin: 0 auto;
+            width: 70%;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .back {
+                position: absolute;
+                width: 100%;
+                height: 20px;
+                line-height: 20px;
+                top: 10px;
+                left: 10px;
+                a {
+                    font-size: 20px;
+                    color: rgb(63, 99, 184);
+                }
+            }
+
+            h1 {
+                font-size: 64px;
+                padding: 0px 0px 20px;
+            }
+
+            h2 {
+                padding: 0px 0px 20px;
+            }
+
+            .export {
+                margin: 10px;
+                padding: 10px;
+                background-color: rgb(123, 176, 173);
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+            }
+
+            ul {
+                margin-top: 20px;
+                li {
+                    width: 100%;
+                    border: 1px solid #bbb;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .company {
+                        font-size: 16px;
+                        padding: 20px 20px 10px;
+                    }
+
+                    .title {
+                        font-size: 24px;
+                        padding: 0 20px 20px;
+                    }
+
+                    a {
+                        display: block;
+                        width: 80px;
+                        background-color: #333;
+                        color: #fff;
+                        border-radius: 5px;
+                        text-align: center;
+                        margin: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-shrink: 0;
+                        font-size: 24px;
+                    }
+                }
+
+                li + li {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}

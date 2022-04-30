@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Search</title>
+</head>
+<body id="search">
+    <div class="container">
+        <div class="box">
+            <div class="back">
+                <a href="/">< BACK</a>
+            </div>
+            <h1>Result</h1>
+            <h2>Found {{count}} results for {{search}}</h2>
+            <a class="export" href="/export/{{search}}">Export to CSV</a>
+            <div class="item-wrap">
+                <ul>
+                    {% for x in data %}
+                    <li>
+                        <div>
+                            <div class="company">{{x['company']}}</div>
+                            <div class="title">{{x['title']}}</div>
+                        </div>
+                        <a href="{{x['link']}}" target="_blank">GO</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
